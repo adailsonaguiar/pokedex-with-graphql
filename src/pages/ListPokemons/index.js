@@ -1,14 +1,72 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { addPokemon } from '../../store/pokemons/actions';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './styles.css';
 
 export default () => {
-  const dispatch = useDispatch();
-  const pokemon = useSelector((state) => state.pokemons.text);
-
-  useEffect(() => {
-    dispatch(addPokemon('Esse outro'));
-    document.body.innerHTML = `<h1>${pokemon}</h1>`;
-  });
-  return <div>Estou no início</div>;
+  return (
+    <div className="container">
+      <Link to={'/details/:name'}>
+        <div className="card-pokemon">
+          <div className="container-image">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+          </div>
+          <div className="card-info">
+            <h2 className="name-pokemon">Bubasaur</h2>
+            <div className="pokemon-type">
+              <div className="type-fire">Fire</div>
+              <div className="type-fire"></div>
+            </div>
+          </div>
+        </div>
+      </Link>
+      <div className="card-pokemon">
+        <div className="container-image">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+        </div>
+        <div className="card-info">
+          <h2 className="name-pokemon">Bubasaur</h2>
+          <div className="pokemon-type">
+            <div className="type-fire">Fire</div>
+            <div className="type-fire"></div>
+          </div>
+        </div>
+      </div>
+      <div className="card-pokemon">
+        <div className="container-image">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+        </div>
+        <div className="card-info">
+          <h2 className="name-pokemon">Bubasaur</h2>
+          <div className="pokemon-type">
+            <div className="type-fire">Fire</div>
+            <div className="type-fire"></div>
+          </div>
+        </div>
+      </div>
+      <div className="card-pokemon">
+        <div className="container-image">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+        </div>
+        <div className="card-info">
+          <h2 className="name-pokemon">Bubasaur</h2>
+          <div className="pokemon-type">
+            <div className="type-fire">Fire</div>
+            <div className="type-fire"></div>
+          </div>
+        </div>
+      </div>
+      <div className="card-pokemon">
+        <div className="container-image">
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+        </div>
+        <div className="card-info">
+          <h2 className="name-pokemon">Bubasaur</h2>
+          <div className="pokemon-type">
+            <div className="type-fire">Fire</div>
+            <div className="type-fire"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };

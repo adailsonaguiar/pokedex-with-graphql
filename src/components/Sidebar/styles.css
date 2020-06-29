@@ -1,0 +1,49 @@
+.toolbar {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  display: 'flex';
+  justify-content: 'space-between';
+  background: #ee4035;
+}
+
+.container-space {
+  flex: 1;
+}
+
+.pokebola {
+  margin-left: 5px;
+  width: 65px;
+}
+
+.search-bar {
+  display: flex;
+  padding: 5px;
+  width: 470px;
+  height: 50px;
+}
+
+.search-bar input {
+  padding: 2px 4px;
+  margin-left: 5px;
+  flex: 1;
+  font-size: 18px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+::placeholder {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+::-ms-input-placeholder {
+  color: #c4c4c4;
+}

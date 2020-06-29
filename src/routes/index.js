@@ -1,29 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
+import { ListPokemon, DetailsPokemon } from '../pages';
 export default () => {
-  function Home() {
-    return <h2>Home</h2>;
-  }
-
-  function About() {
-    return <h2>About</h2>;
-  }
-
-  function Users() {
-    return <h2>Users</h2>;
-  }
-
   return (
     <Switch>
-      <Route path="/about">
-        <About />
+      <Route exact path="/">
+        <ListPokemon />
       </Route>
-      <Route path="/users">
-        <Users />
-      </Route>
-      <Route path="/">
-        <Home />
+      <Route  path="/details/:name">
+        <DetailsPokemon />
       </Route>
     </Switch>
   );
