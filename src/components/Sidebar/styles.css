@@ -1,10 +1,11 @@
-.toolbar {
+header {
   display: flex;
   height: 80px;
   align-items: center;
-  display: 'flex';
-  justify-content: 'space-between';
   background: #ee4035;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .container-space {

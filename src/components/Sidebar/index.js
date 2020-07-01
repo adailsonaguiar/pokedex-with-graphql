@@ -5,7 +5,7 @@ import pokebola from '../../assets/pokebola.svg';
 
 const Sidebar = () => {
   return (
-    <div className="toolbar">
+    <header>
       <div className="container-space">
         <Link to="/">
           <img src={pokebola} className="pokebola" />
@@ -19,7 +19,7 @@ const Sidebar = () => {
         <input autoFocus placeholder="Digite o nome de um super pokémon..." />
       </div>
       <div className="container-space" />
-    </div>
+    </header>
   );
 };
 
