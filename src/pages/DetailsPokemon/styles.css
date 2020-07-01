@@ -4,10 +4,10 @@
   margin: 0 auto 30px;
   width: 40vw;
   height: 555px;
-  background: #f2f2f2;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 @media (max-width: 700px) {
@@ -20,11 +20,14 @@
   display: flex;
   flex: 2;
   justify-content: center;
+  width: 100%;
+  padding: 10px;
 }
 
 .card-pokemon-details img {
   position: relative;
-  width: 180px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .card-pokemon-details .card-info {
@@ -52,6 +55,8 @@
 }
 
 .card-pokemon-details .ability {
+  display: flex;
+  flex-direction: column;
   width: 100px;
   height: 50px;
   border-radius: 10px;
@@ -59,9 +64,12 @@
   border: 1px solid #f2f2f2;
   align-items: center;
   justify-content: center;
-  display: flex;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+.card-pokemon-details .ability p {
+  font-size: 10px;
 }
 
 .card-pokemon-details .evolutions {
@@ -74,15 +82,41 @@
 }
 
 .card-pokemon-details .evolution-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px;
   width: 100px;
   height: 100px;
-  background: #f2f2f2;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
-  margin-right: 10px;
+  transition: all 100ms ease-out;
+}
+
+.card-pokemon-details .evolution-card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.card-pokemon-details .evolution-card .teste {
+  width: 90px;
+  height: 70px;
 }
 
 .card-pokemon-details .evolution-card img {
+  max-width: 100%;
+  max-height: 100%;
   position: relative;
-  width: 100px;
+}
+
+.pokemon-attacks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#pokemon-name {
 }

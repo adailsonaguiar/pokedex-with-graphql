@@ -7,7 +7,7 @@ export default () => {
       <Route exact path="/">
         <ListPokemon />
       </Route>
-      <Route path="/details/:id">
+      <Route path="/details/:name">
         <DetailsPokemon />
       </Route>
     </Switch>
