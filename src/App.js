@@ -10,7 +10,10 @@ import './styles/custom.css';
 import Routes from './routes';
 export default () => {
   return (
-    <Provider store={createStore(combineReducers, applyMiddleware(ReduxThunk))}>
+    <Provider
+      store={createStore(combineReducers, applyMiddleware(ReduxThunk))}
+      basename="/pokedex-with-graphql/"
+    >
       <Router>
         <Sidebar />
         <div className="container-body">
